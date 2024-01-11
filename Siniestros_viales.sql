@@ -76,17 +76,17 @@ FIELDS TERMINATED BY ',' ENCLOSED BY ''	 ESCAPED BY ''
 LINES TERMINATED BY '\n' IGNORE 1 LINES;
 SELECT * FROM Rol;
 
-DROP TABLE IF EXISTS  Party;
-CREATE TABLE IF NOT EXISTS   Party (
+DROP TABLE IF EXISTS  Participantes;
+CREATE TABLE IF NOT EXISTS   Participantes (
     Participantes_Id INT PRIMARY KEY,
     Participantes VARCHAR(255)
 );
 
-LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\party.csv'
-INTO TABLE Party
+LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\participantes.csv'
+INTO TABLE Participantes
 FIELDS TERMINATED BY ',' ENCLOSED BY ''	 ESCAPED BY ''
 LINES TERMINATED BY '\n' IGNORE 1 LINES;
-SELECT * FROM Party;
+SELECT * FROM Participantes;
 
 DROP TABLE IF EXISTS  Rango_Etario;
 CREATE TABLE IF NOT EXISTS   Rango_Etario (
@@ -136,22 +136,6 @@ FIELDS TERMINATED BY ',' ENCLOSED BY ''	 ESCAPED BY ''
 LINES TERMINATED BY '\n' IGNORE 1 LINES;
 SELECT * FROM Comunas;
 
-DROP TABLE IF EXISTS Participantes;
-CREATE TABLE IF NOT EXISTS  Participantes ( 
-    Hechos_Id VARCHAR(255),
-    Victima_Id INT,
-    Acusado_Id INT,
-    Rol_Id INT,
-    Sexo_Id INT,
-    Edad INT 
-);
-
-LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\participantes.csv'
-INTO TABLE Participantes
-FIELDS TERMINATED BY ',' ENCLOSED BY ''	 ESCAPED BY ''
-LINES TERMINATED BY '\n' IGNORE 1 LINES;
-SELECT * FROM Participantes;
-
 
 DROP TABLE IF EXISTS Hechos;
 CREATE TABLE IF NOT EXISTS Hechos (
@@ -164,11 +148,20 @@ CREATE TABLE IF NOT EXISTS Hechos (
     Tipo_Calle_Id VARCHAR(255),
     Comuna_Id INT,
     Participantes_Id INT,
+    Víctima_Id INT,
+    Acusado_Id INT,
+    Rol_Id INT,
+    Sexo_Id INT,
     Rango_Etario_Id INT,
+    Edad INT,
     FOREIGN KEY (Cruce_Id) REFERENCES Cruces(Cruce_Id),
     FOREIGN KEY (Tipo_Calle_Id) REFERENCES Tipo_Calle(Tipo_Calle_Id),
     FOREIGN KEY (Comuna_Id) REFERENCES Comunas(Comuna_Id),
-    FOREIGN KEY (Participantes_Id) REFERENCES Party(Participantes_Id),
+    FOREIGN KEY (Participantes_Id) REFERENCES Participantes(Participantes_Id),
+    FOREIGN KEY (Víctima_Id) REFERENCES Victima(Víctima_Id)
+    FOREIGN KEY (Acusado_Id) REFERENCES Acusado(Acusado_Id)
+    FOREIGN KEY (Rol_Id) REFERENCES Rol(Rol_Id)
+    FOREIGN KEY (Sexo_Id) REFERENCES Sexo(Sexo_Id)
     FOREIGN KEY (Rango_Etario_Id) REFERENCES Rango_Etario(Rango_Etario_Id)
 );
 
