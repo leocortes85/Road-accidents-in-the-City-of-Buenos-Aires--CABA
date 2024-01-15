@@ -22,6 +22,7 @@ En este proyecto, el Observatorio de Movilidad y Seguridad Vial (OMSV), un centr
 | ------------------------ | -------------------------------------------------------------------------------------------- |
 | **/data**                | Carpeta que almacena conjuntos de datos y archivos utilizados por el Análisis y el Dashboard. |
 | **/Notebooks**           | Carpeta que contiene cuadernos Jupyter utilizados para el proceso de ETL y EDA.               |
+| **/Images**              | Carpeta que contiene imagenes relevantes e ilustrativas para el proyecto de analisis.               |
 | **gitignore**            | Archivo que especifica carpetas y archivos que deben ser ignorados por el control de versiones (git).   |
 | **LICENSE**              | LICENCIA MIT - Archivo que especifica los términos bajo los cuales se comparte el código fuente.|
 | **Siniestros_viales.sql**| Tablas dimensionales para obtener un modelo relacional de base de datos en un sistema SQL.      |
