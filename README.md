@@ -55,7 +55,7 @@ Steam is a digital distribution platform for video games, it has over 325 millio
 - A dashboard is created in PowerBI highlighting the analysis sets established in the EDA.
 
 ### Analysis by time variables
-![Tem](images/Tem_Analysis.png)
+![Tem](images/Tem_Analysis.jpg)
 
 ### Analysis by geographic variables
 ![Geo](images/Geo_Analysis.jpg)
