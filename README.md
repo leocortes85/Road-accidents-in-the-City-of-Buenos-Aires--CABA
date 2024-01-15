@@ -8,7 +8,7 @@
 ![Powerbi](https://img.shields.io/badge/-PowerBI-333333?style=flat&logo=powerbi)
 ![VSC](https://img.shields.io/badge/Visual_Studio_Code-333333?style=flat&logo=visual%20studio%20code&logoColor=white)
 
-# Road accidents in the City of Buenos Aires (CABA)
+# EN: Road accidents in the City of Buenos Aires (CABA)
 
 ![Analysis](images/Siniestros_Viales.gif)
 
