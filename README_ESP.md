@@ -73,6 +73,10 @@ En este proyecto, el Observatorio de Movilidad y Seguridad Vial (OMSV), un centr
 
 Finalmente, se realiza un reporte en LaTeX y se presenta en formato PDF con un resumen de análisis realizado con las respectivas conclusiones encontradas durante el trabajo del presente proyecto.
 
+## Recursos
+El archivo principal 'Homicidios' se obtuvo desde [Data Buenos Aires](https://data.buenosaires.gob.ar/dataset/victimas-siniestros-viales).
+Se utilizaron recursos adicionales que fueron obtenidos desde [API Buenos Aires](https://datosabiertos-usig-apis.buenosaires.gob.ar/datos_utiles) y desde [Censo Buenos Aires](https://es.wikipedia.org/wiki/Buenos_Aires)
+
 ## Contacto
 
 Para obtener más información sobre el creador de este proyecto, visite su [perfil de LinkedIn](https://www.linkedin.com/in/leonardo-cort%C3%A9s-zambrano-13522295/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/leonardo-cort%C3%A9s-zambrano-13522295/)

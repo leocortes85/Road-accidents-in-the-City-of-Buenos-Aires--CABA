@@ -75,6 +75,9 @@ Steam is a digital distribution platform for video games, it has over 325 millio
 
 Finally, a report is made in LaTeX and presented in PDF format with a summary of the analysis carried out with the respective conclusions found during the work of this project.
 
+## Resources
+The main file 'Homicides' was obtained from [Data Buenos Aires](https://data.buenosaires.gob.ar/dataset/victimas-siniestros-viales).
+Additional resources were used that were obtained from [API Buenos Aires](https://datosabiertos-usig-apis.buenosaires.gob.ar/datos_utiles) and from [Censo Buenos Aires](https://es.wikipedia.org/ wiki/Buenos_Aires)
 
 ## Contact 
 
