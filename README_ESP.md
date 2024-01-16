@@ -68,6 +68,10 @@ En este proyecto, el Observatorio de Movilidad y Seguridad Vial (OMSV), un centr
 
 - Con el fin de hacer una presentación al Observatorio de Movilidad y Seguridad Vial (OMSV) de la ciudad de Buenos Aires, se proponen una serie de objetivos y las respectivas conclusiones dentro del Panel, según el análisis y los resultados encontrados en la evaluación de los KPI planteados.
 
+## Informe Final
+
+Finalmente, se realiza un reporte en LaTeX y se presenta en formato PDF con un resumen de análisis realizado con las respectivas conclusiones encontradas durante el trabajo del presente proyecto.
+
 ## Contacto
 
 Para obtener más información sobre el creador de este proyecto, visite su [perfil de LinkedIn](https://www.linkedin.com/in/leonardo-cort%C3%A9s-zambrano-13522295/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/leonardo-cort%C3%A9s-zambrano-13522295/)

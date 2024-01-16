@@ -70,6 +70,11 @@ Steam is a digital distribution platform for video games, it has over 325 millio
 - In order to make a presentation to the Mobility and Road Safety Observatory (OMSV) of the city of Buenos Aires, a series of objectives and the respective conclusions are proposed within the Dashboard, according to the analysis and the results found in the evaluation of the KPIs. raised
 
 
+## Final report
+
+Finally, a report is made in LaTeX and presented in PDF format with a summary of the analysis carried out with the respective conclusions found during the work of this project.
+
+
 ## Contact 
 
 To learn more about the creator of this project, visit his [LinkedIn profile](https://www.linkedin.com/in/leonardo-cort%C3%A9s-zambrano-13522295/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/leonardo-cort%C3%A9s-zambrano-13522295/)
