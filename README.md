@@ -7,6 +7,7 @@
 ![MySQL](https://img.shields.io/badge/-MySQL-333333?style=flat&logo=mysql)
 ![Powerbi](https://img.shields.io/badge/-PowerBI-333333?style=flat&logo=powerbi)
 ![VSC](https://img.shields.io/badge/Visual_Studio_Code-333333?style=flat&logo=visual%20studio%20code&logoColor=white)
+![LaTeX](https://img.shields.io/badge/LaTeX-333333?style=flat-square&logo=LaTeX&logoColor=white)
 
 # EN: Road accidents in the City of Buenos Aires (CABA)
 
