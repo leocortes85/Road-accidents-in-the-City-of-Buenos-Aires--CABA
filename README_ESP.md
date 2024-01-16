@@ -22,7 +22,8 @@ En este proyecto, el Observatorio de Movilidad y Seguridad Vial (OMSV), un centr
 | ------------------------ | -------------------------------------------------------------------------------------------- |
 | **/data**                | Carpeta que almacena conjuntos de datos y archivos utilizados por el Análisis y el Dashboard. |
 | **/Notebooks**           | Carpeta que contiene cuadernos Jupyter utilizados para el proceso de ETL y EDA.               |
-| **/Images**              | Carpeta que contiene imagenes relevantes e ilustrativas para el proyecto de analisis.               |
+| **/Images**              | Carpeta que contiene imagenes relevantes e ilustrativas para el análisis del proyecto.         |
+| **/Report**              | Carpeta que contiene archivos LaTex y PDF (en inglés y español) con un análisis final y un informe de conclusiones del proyecto.         |
 | **gitignore**            | Archivo que especifica carpetas y archivos que deben ser ignorados por el control de versiones (git).   |
 | **LICENSE**              | LICENCIA MIT - Archivo que especifica los términos bajo los cuales se comparte el código fuente.|
 | **Siniestros_viales.sql**| Tablas dimensionales para obtener un modelo relacional de base de datos en un sistema SQL.      |
@@ -41,7 +42,7 @@ En este proyecto, el Observatorio de Movilidad y Seguridad Vial (OMSV), un centr
 - Durante la exploración de datos, encontramos barrios que no correspondían a sus respectivas comunas. Para preservar la fidelidad de la ubicación geográfica, corregimos la columna 'Comuna' asignando la comuna a la que pertenece cada barrio, según los registros del Gobierno de Buenos Aires.
 - Utilizando web scraping, descargamos los datos del censo de la ciudad de Buenos Aires, con el objetivo de conocer los datos de población y luego utilizamos el crecimiento poblacional anual promedio para estimar la población año tras año.
 - Se realizó un EDA para analizar los conjuntos de datos utilizando Pandas, Matplotlib y Seaborn.
-- Se encontraron y seleccionaron variables relevantes para realizar los análisis en la presentación del panel, con el objetivo de orientar el caso hacia la toma de decisiones correctas.
+- Se encontraron y seleccionaron variables relevantes para realizar los análisis en la presentación del panel, con el objetivo de orientar el caso hacia la toma de decisiones correctas.31
 - El análisis de datos se dividió en tres conjuntos (Análisis por variables temporales, Análisis por variables geográficas y Análisis por víctimas) para mayor orden y comprensión de la información contenida en el conjunto de datos con miras al objetivo de evaluar indicadores de rendimiento ideales para tomar decisiones correctas.
 
 ## Tablas Dimensionales y Modelo Relacional

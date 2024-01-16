@@ -25,6 +25,7 @@ Steam is a digital distribution platform for video games, it has over 325 millio
 | **/data**                | Folder that stores datasets and files used by the Analysis and DAshboard.                              |
 | **/Notebooks**           | Folder containing Jupyter notebooks used for ETL and EDA process |
 | **/Images**              | Folder containing relevant and illustrative images for the analysis project. |
+| **/Report**              | Folder containing LaTex and PDF files (In english and spanish) with a final analysis and conclutions report about the project.|
 | **gitignore**            | File specifying folders and files to be ignored by version control (git).                      |
 | **LICENSE**              | MIT LICENSE - File specifying the terms under which the source code is shared.                 |
 | **Siniestros_viales.sql**| Dimensional tables to get a Database relational model in a SQL system.                            |
