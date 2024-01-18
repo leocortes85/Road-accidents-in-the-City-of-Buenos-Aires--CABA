@@ -1,5 +1,3 @@
-# DE: Verkehrsunfälle in der Stadt Buenos Aires (CABA)
-
 ![Python](https://img.shields.io/badge/Python-333333?style=flat&logo=python)
 ![Jupyter](https://img.shields.io/badge/-Jupyter_Notebook-333333?style=flat&logo=jupyter)
 ![Pandas](https://img.shields.io/badge/-Pandas-333333?style=flat&logo=pandas)
@@ -11,47 +9,76 @@
 ![VSC](https://img.shields.io/badge/Visual_Studio_Code-333333?style=flat&logo=visual%20studio%20code&logoColor=white)
 ![LaTeX](https://img.shields.io/badge/LaTeX-333333?style=flat-square&logo=LaTeX&logoColor=white)
 
-# DE: Verkehrsunfälle in der Stadt Buenos Aires (CABA)
+# EN: Road accidents in the City of Buenos Aires (CABA)
 
-![Analyse](images/Siniestros_Viales.gif)
+![Analysis](images/Siniestros_Viales.gif)
 
-## Projektdarstellung
+## Project Description
 
-In diesem Projekt hat uns das Observatorium für Mobilität und Verkehrssicherheit (OMSV), ein Forschungszentrum, das dem Ministerium für Verkehr der Regierung der Autonomen Stadt Buenos Aires untersteht, gebeten, ein Datenanalyseprojekt vorzubereiten. Das Ziel ist es, Informationen zu generieren, die es den lokalen Behörden ermöglichen, Maßnahmen zu ergreifen, um die Anzahl der Todesfälle durch Verkehrsunfälle zu reduzieren. Hierfür stellen sie uns einen Datensatz zu Tötungsdelikten bei Verkehrsunfällen zur Verfügung, die in der Stadt Buenos Aires im Zeitraum 2016-2021 stattgefunden haben.
+In this project, The Mobility and Road Safety Observatory (OMSV), a study center that is under the orbit of the Ministry of Transportation of the Government of the Autonomous City of Buenos Aires, asks us to prepare a data analysis project, in order to to generate information that allows local authorities to take measures to reduce the number of fatalities from road accidents. To do this, they provide us with a dataset on homicides in road accidents that occurred in the City of Buenos Aires during the period 2016-2021.
 
 
-## Projektaufbau 
+## Project Structure 
 
-| Ordner/Datei              | Beschreibung                                                                                  |
+| Folder/File              | Description                                                                                  |
 | ------------------------ | -------------------------------------------------------------------------------------------- |
-| **/data**                | Ordner, der Datensätze und Dateien für die Analyse und das Dashboard speichert.                              |
-| **/Notebooks**           | Ordner mit Jupyter Notebooks, die für den ETL- und EDA-Prozess verwendet werden. |
-| **/Images**              | Ordner mit relevanten und veranschaulichenden Bildern für das Analyseprojekt. |
-| **/Report**              | Ordner mit LaTex- und PDF-Dateien (in Englisch und Spanisch) mit einem Abschlussbericht über das Projekt.|
-| **gitignore**            | Datei, die Ordner und Dateien angibt, die von der Versionskontrolle (Git) ignoriert werden sollen.                      |
-| **LICENSE**              | MIT-LIZENZ - Datei, die die Bedingungen festlegt, unter denen der Quellcode geteilt wird.                 |
-| **Siniestros_viales.sql**| Dimensionale Tabellen zur Erstellung eines relationalen Datenbankmodells in einem SQL-System.                            |
-| **Siniestros_viales.pbix** | Dashboard mit visueller Analyse des Datensatzes. |
-| **README.md**            | Hauptprojektdokumentation in Englisch.                                                         |
-| **README_ESP.md**        | Hauptprojektdokumentation in Spanisch.                                                         |
+| **/data**                | Folder that stores datasets and files used by the Analysis and DAshboard.                              |
+| **/Notebooks**           | Folder containing Jupyter notebooks used for ETL and EDA process |
+| **/Images**              | Folder containing relevant and illustrative images for the analysis project. |
+| **/Report**              | Folder containing LaTex and PDF files (In english and spanish) with a final analysis and conclutions report about the project.|
+| **gitignore**            | File specifying folders and files to be ignored by version control (git).                      |
+| **LICENSE**              | MIT LICENSE - File specifying the terms under which the source code is shared.                 |
+| **Siniestros_viales.sql**| Dimensional tables to get a Database relational model in a SQL system.                            |
+| **Siniestros_viales.pbix** | Dashboard with visual analysis of the dataset. |
+| **README.md**            | Main project documentation in English.                                                         |
+| **README_ESP.md**        | Main project documentation in Spanish.                                                         |
 
 
-## Transformationen und explorative Datenanalyse (EDA)
+## Transformations and Exploratory Data Analysis (EDA)
 
-- Die Extraktion, Transformation und das Laden (ETL) wurden mit der Pandas-Bibliothek durchgeführt.
-- Strategien wurden angewendet, um verschachtelte Daten zu handhaben, und irrelevante oder stark leere Spalten wurden entfernt.
-- Die Tabellen "Facts" und "Victims" wurden durch einen 'merge' zusammengeführt, um eine einzige Tabelle mit allen relevanten Informationen zu erhalten.
-- Informationen wurden von einer API bereitgestellt, die von der Regierung der Stadt Buenos Aires stammt und Informationen zu den Koordinaten jedes Viertels enthält, was zur Bildung einer neuen Spalte "Barrio" führte.
-- Um die Informationen der geografischen Koordinaten in der API der Regierung der Stadt Buenos Aires zu respektieren, haben wir die Spalte 'Comuna' modifiziert und die Werte auf 'Comuna 0' gesetzt, wenn die Koordinaten keinem Viertel (Spalte 'Barrio') entsprechen.
-- Während der Datenexploration haben wir Viertel gefunden, die nicht ihren jeweiligen Bezirken entsprachen. Um die Treue des geografischen Ortes zu bewahren, haben wir die Spalte 'Comuna' korrigiert, indem wir den Bezirk zuwiesen, zu dem jedes Viertel gehört, gemäß den Aufzeichnungen der Regierung von Buenos Aires.
-- Mit Web-Scraping haben wir die Volkszählungsdaten der Stadt Buenos Aires heruntergeladen, um die Bevölkerungsdaten zu kennen, und dann haben wir das durchschnittliche jährliche Bevölkerungswachstum verwendet, um die Bevölkerung Jahr für Jahr zu schätzen.
-- EDA wurde durchgeführt, um Datensätze mit Pandas, Matplotlib und Seaborn zu analysieren.
-- Relevante Variablen wurden gefunden und ausgewählt, um die Analysen in der Dashboard-Präsentation durchzuführen, mit dem Ziel, den Fall zu einer korrekten Entscheidungsfindung zu führen.
-- Die Datenanalyse wurde in drei Sätze unterteilt (Analyse nach zeitlichen Variablen, Analyse nach geografischen Variablen und Analyse nach Opfern) für eine bessere Ordnung und Verständnis der im Datensatz enthaltenen Informationen im Hinblick auf das Ziel, ideale Leistungsindikatoren zu bewerten, um korrekte Entscheidungen zu treffen.
+- Extraction, Transformation, and Loading (ETL) were performed using the Pandas library.
+- Strategies were applied to handle nested data, and irrelevant or highly null columns were removed.
+- The Facts and Victims tables were joined by means of a 'merge' in order to obtain a single table with all the relevant information
+- Information was added from an API provided by the government of the City of Buenos Aires, with information on the coordinates of each neighborhood leading to the formation of a new column "Barrio"
+- In order to respect the information given by the geographical coordinates in the API provided by the government of the City of Buenos Aires , we modified the 'Comuna' column leaving the values ​​at 'Comuna 0' where the coordinates correspond to empty neighborhood (column 'Barrio').
+- During the data exploration we found neighborhoods that did not correspond to their respective commune. To preserve the fidelity of the geographical location, we correct the 'Community' column by assigning the commune to which each neighborhood belongs, according to the records of the Government of Buenos Aires.
+- Using web-scraping, we download the census data of the city of Buenos Aires, in order to know the population data ud then we used the average annual population growth to estimate the population year by year.
+- EDA was conducted on analize datasets using Pandas, Matplotlib, and Seaborn.
+- Relevant variables were found and selected to carry out the analyzes in the dashboard presentation, with the aim of leading the case to correct decision-making.
+- The data analysis was divided into three sets (Analysis by time variables, Analysis by geographical variables and analysis by victims) for greater order and understanding of the information contained in the dataset with a view to the objective of evaluating ideal performance indicators to make correct decisions.
 
-## Dimensionale Tabellen und relationales Modell
+## Dimensional Tables and Relational Model
 
-- Mit den während der Analyse ausgewählten Variablen wurde ein relationales Modell mit Hilfstabellen und einer Haupttabelle erstellt, um die Informationen zu organisieren und leicht darauf zuzugreifen.
-- Das relationale Modell wurde durch
+- With the variables selected during the analysis, a relational model was created with auxiliary dimensional tables and a main table, in order to organize the information and easily access it.
+- The relational model was created by creating a database from a MySQL script.
 
+## Dashboard
+
+- A dashboard is created in PowerBI highlighting the analysis sets established in the EDA.
+
+### Analysis by time variables
+![Tem](images/Tem_Analysis.jpg)
+
+### Analysis by geographic variables
+![Geo](images/Geo_Analysis.jpg)
+### Analysis by victims
+![Vic](images/Vic_Analysis.jpg)
+
+- The approach to 3 Key Performance Indicators (KPIs) is presented in the dashboard based on the analysis and the conclusions of each analysis.
+![Vic](images/KPI.png)
+
+- In order to make a presentation to the Mobility and Road Safety Observatory (OMSV) of the city of Buenos Aires, a series of objectives and the respective conclusions are proposed within the Dashboard, according to the analysis and the results found in the evaluation of the KPIs. raised
+
+
+## Final report
+
+Finally, a report is made in LaTeX and presented in PDF format with a summary of the analysis carried out with the respective conclusions found during the work of this project.
+
+## Resources
+The main file 'Homicides' was obtained from [Data Buenos Aires](https://data.buenosaires.gob.ar/dataset/victimas-siniestros-viales).
+Additional resources were used that were obtained from [API Buenos Aires](https://datosabiertos-usig-apis.buenosaires.gob.ar/datos_utiles) and from [Censo Buenos Aires](https://es.wikipedia.org/wiki/Buenos_Aires)
+
+## Contact 
+
+To learn more about the creator of this project, visit his [LinkedIn profile](https://www.linkedin.com/in/leonardo-cort%C3%A9s-zambrano-13522295/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/leonardo-cort%C3%A9s-zambrano-13522295/)
 
