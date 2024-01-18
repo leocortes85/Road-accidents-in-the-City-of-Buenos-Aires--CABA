@@ -1,5 +1,3 @@
-# DE: Verkehrsunfälle in der Stadt Buenos Aires (CABA)
-
 ![Python](https://img.shields.io/badge/Python-333333?style=flat&logo=python)
 ![Jupyter](https://img.shields.io/badge/-Jupyter_Notebook-333333?style=flat&logo=jupyter)
 ![Pandas](https://img.shields.io/badge/-Pandas-333333?style=flat&logo=pandas)
