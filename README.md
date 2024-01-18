@@ -53,6 +53,36 @@ Steam ist eine digitale Vertriebsplattform für Videospiele mit über 325 Millio
 ## Dimensionale Tabellen und relationales Modell
 
 - Mit den während der Analyse ausgewählten Variablen wurde ein relationales Modell mit Hilfstabellen und einer Haupttabelle erstellt, um die Informationen zu organisieren und leicht darauf zuzugreifen.
-- Das relationale Modell wurde durch
+- Das relationale Modell wurde durch Erstellen einer Datenbank aus einem MySQL-Skript erstellt.
+
+## Dashboard
+
+- Ein Dashboard wird in PowerBI erstellt, das die im EDA festgelegten Analysesätze hervorhebt.
+
+### Analyse nach zeitlichen Variablen
+![Tem](images/Tem_Analysis.jpg)
+
+### Analyse nach geografischen Variablen
+![Geo](images/Geo_Analysis.jpg)
+### Analyse nach Opfern
+![Vic](images/Vic_Analysis.jpg)
+
+- Im Dashboard werden 3 Key Performance Indicators (KPIs) vorgestellt, basierend auf der Analyse und den Schlussfolgerungen jeder Analyse.
+![Vic](images/KPI.png)
+
+- Um dem Observatorium für Mobilität und Verkehrssicherheit (OMSV) der Stadt Buenos Aires eine Präsentation zu machen, werden Ziele und entsprechende Schlussfolgerungen innerhalb des Dashboards vorgeschlagen, basierend auf der Analyse und den Ergebnissen, die bei der Auswertung der aufgestellten KPIs gefunden wurden.
+
+
+## Abschlussbericht
+
+Schließlich wird ein Bericht in LaTex erstellt und im PDF-Format präsentiert, der eine Zusammenfassung der durchgeführten Analyse mit den entsprechenden Schlussfolgerungen während der Arbeit an diesem Projekt enthält.
+
+## Ressourcen
+Die Hauptdatei 'Homicides' wurde von [Data Buenos Aires](https://data.buenosaires.gob.ar/dataset/victimas-siniestros-viales) erhalten.
+Zusätzliche Ressourcen wurden verwendet, die von [API Buenos Aires](https://datosabiertos-usig-apis.buenosaires.gob.ar/datos_utiles) und von [Censo Buenos Aires](https://es.wikipedia.org/wiki/Buenos_Aires) stammen.
+
+## Kontakt 
+
+Um mehr über den Schöpfer dieses Projekts zu erfahren, besuchen Sie sein [LinkedIn-Profil](https://www.linkedin.com/in/leonardo-cort%C3%A9s-zambrano-13522295/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/leonardo-cort%C3%A9s-zambrano-13522295/)
 
 
