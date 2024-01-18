@@ -19,7 +19,6 @@
 
 In diesem Projekt hat uns das Observatorium für Mobilität und Verkehrssicherheit (OMSV), ein Forschungszentrum, das dem Ministerium für Verkehr der Regierung der Autonomen Stadt Buenos Aires untersteht, gebeten, ein Datenanalyseprojekt vorzubereiten. Das Ziel ist es, Informationen zu generieren, die es den lokalen Behörden ermöglichen, Maßnahmen zu ergreifen, um die Anzahl der Todesfälle durch Verkehrsunfälle zu reduzieren. Hierfür stellen sie uns einen Datensatz zu Tötungsdelikten bei Verkehrsunfällen zur Verfügung, die in der Stadt Buenos Aires im Zeitraum 2016-2021 stattgefunden haben.
 
-Steam ist eine digitale Vertriebsplattform für Videospiele mit über 325 Millionen Benutzern und bietet mehr als 25.000 Spiele in seinem Katalog an.
 
 ## Projektaufbau 
 
