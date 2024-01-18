@@ -17,7 +17,6 @@
 
 In this project, The Mobility and Road Safety Observatory (OMSV), a study center that is under the orbit of the Ministry of Transportation of the Government of the Autonomous City of Buenos Aires, asks us to prepare a data analysis project, in order to to generate information that allows local authorities to take measures to reduce the number of fatalities from road accidents. To do this, they provide us with a dataset on homicides in road accidents that occurred in the City of Buenos Aires during the period 2016-2021.
 
-Steam is a digital distribution platform for video games, it has over 325 million users and offers more than 25,000 games in its catalog.
 
 ## Project Structure 
 
